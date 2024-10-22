@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- CSS Styles -->
+     
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+     <!-- Hero Section -->
+     
+        <nav class="navbar">
+            <div class="logo">SAVOURY HUB</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin"><i
+                    class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i
+                        class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon twitter"><i
+                            class="fab fa-twitter"></i></a>
+                   
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+   
+               
+            </div>
+        </nav>
+    </header>
+
+    
+    
+    
+    <!-- FAQ HTML Structure -->
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">What is Sovary Hub?</button>
+            <div class="faq-answer">
+                <p>Sovary Hub is a leading restaurant offering a range of cuisines and an excellent dining experience.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What are your opening hours?</button>
+            <div class="faq-answer">
+                <p>We are open daily from 04:00 PM to 01:00 AM WITA.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you offer reservations?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer reservations. You can contact us via phone or email to make a reservation.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Do you have vegetarian or vegan options?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer a variety of vegetarian and vegan dishes on our menu.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+<footer class="footer">
+    <div class="sovy-title">
+        SAVOURY HUB
+    </div>
+  
+    <div class="contact contact-icons">
+        <div>
+            <p><i class="fas fa-store"></i> Restaurant, Jl. Raya Canggu, Badung, Bali.</p>
+        </div>
+        <div>
+            <p><i class="fas fa-phone"></i> (+62) 81 224 557 900</p>
+        </div>
+        <div>
+            <p><i class="fas fa-envelope"></i> Reservation@sovy.com</p>
+        </div>
+        <div>
+            <p><i class="fas fa-clock"></i> Open 04:00 pm WITA <br> Closed 01:00 am WITA</p>
+        </div>
+    </div>
+    
+    <div class="social social-footer">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i>FACEBOOK</a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i>TWITTER</a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+        <a href="https://www.tripadvisor.com" target="_blank"><i class="fab fa-tripadvisor"></i>TRIP ADVISOR</a>
+    </div>
+  
+    <div class="copyright">
+        © 2020 Sovy Restaurant by Jegtheme. All Rights Reserved
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+
+
+    <!-- jQuery -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- FAQ Accordion JS -->
+
+    <script>
+        $(document).ready(function () {
+            // FAQ Accordion
+            $('.faq-question').on('click', function () {
+                var answer = $(this).next('.faq-answer');
+                // Toggle the answer visibility
+                answer.slideToggle();
+
+                // Close other answers
+                $('.faq-answer').not(answer).slideUp();
+            });
+        });
+    </script>
+</body>
+
+</html>
